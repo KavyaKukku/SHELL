@@ -10,7 +10,7 @@ while read line
 do
 no1=`expr $no1+1`
 set $line>/dev/null
-nowds=`expr $wordcount+$#`
+nowds=`expr $nowds+$#`
 done < $hi
 echo "Number of lines:$no1"
 echo "number of words:$nowds"
